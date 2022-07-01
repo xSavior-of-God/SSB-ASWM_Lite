@@ -40,9 +40,6 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <compilerVersion>1.8</compilerVersion>
-                    <fork>true</fork>
-                    <executable>C:\Program Files\Java\jdk1.8.0_201\bin\javac</executable>
                 </configuration>
             </plugin>
             <plugin>
