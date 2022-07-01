@@ -31,6 +31,7 @@ jobs:
       - run: mkdir staging && cp target/*.jar staging
         if: steps.extract_branch.outputs.branch == 'master'
       - uses: actions/upload-artifact@v2
+        if: steps.extract_branch.outputs.branch == 'master'
         with:
           name: SSB-ASWM_Lite
           path: staging
