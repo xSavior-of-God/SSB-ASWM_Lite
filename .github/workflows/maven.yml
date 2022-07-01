@@ -27,8 +27,8 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Build with Maven
-        if: steps.extract_branch.outputs.branch == 'master'
         run: mvn -B package --file pom.xml
+        if: steps.extract_branch.outputs.branch == 'master'
       - run: mkdir staging && cp target/*.jar staging
         if: steps.extract_branch.outputs.branch == 'master'
       - uses: actions/upload-artifact@v2
