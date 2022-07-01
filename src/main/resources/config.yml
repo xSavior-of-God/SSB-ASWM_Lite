@@ -1,0 +1,38 @@
+#
+# Developed by xSavior_of_God
+#
+# For SUPPORT
+#  <Telegram/>    @xSavior_of_God
+#  <Discord/>     https://discord.gg/5UuVdTE
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+main:
+  # Data Source valid options
+  # (Source https://github.com/Paul19988/Advanced-Slime-World-Manager/blob/develop/.docs/config/configure-world.md#config-options)
+  # file, mysql, mongodb
+  data-source: "file"
+  # Difficulty valid options
+  # peaceful, easy, normal and hard
+  world:
+    normal:
+      name: "SuperiorWorld"
+      difficulty: "NORMAL"
+    nether:
+      name: "SuperiorWorld_nether"
+      difficulty: "NORMAL"
+    the_end:
+      name: "SuperiorWorld_the_end"
+      difficulty: "NORMAL"
+  # PROBLEM:
+  #  Through the SlimeWorld system,
+  #  the player will be teleported
+  #  to the same logout location when
+  #  he returns to the server (after reboot),
+  #  but in the wrong world!
+  #
+  # This option fixes the problem,
+  # How does it work?
+  #  Briefly teleports the player to the correct
+  #  location, the logout location is stored inside
+  #  a flat SQL database.
+  save-last-logout-position: true
