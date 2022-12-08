@@ -190,7 +190,6 @@ public class SSBWorldManager {
 
 
         private BlockFace getIslandFace(Location location) {
-            Bukkit.getConsoleSender().sendMessage(ChatColor.YELLOW + "Get Island Face! " + location.getWorld().getName());
             //Possibilities: North / East
             if (location.getX() >= location.getZ()) {
                 return -location.getX() > location.getZ() ? BlockFace.NORTH : BlockFace.EAST;
