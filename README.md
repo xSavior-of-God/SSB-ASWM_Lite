@@ -22,8 +22,8 @@ By using this plugin you will benefit from the following things:
 <br/>
 
 ## 🛑 Disadvantages and bugs?
-- There are no disadvantages *(If you know any please let me know, I will add them to the list😀)*
 - *There is likely to be some unknown bug related to some unexpected condition.*
+- **<ins>World size limit! (±50MB)</ins>**
 - ~~Currently, the only BUG I found it related to the management of the teleportation positions at the join after restarting the server, briefly, when I restarted the server I found myself in the default world at the same coordinates as the world I was in...~~
   ***I fixed the bug, so you have nothing to worry about!***
 

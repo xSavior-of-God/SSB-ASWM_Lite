@@ -63,6 +63,11 @@ public class SBlockPosition implements BlockPosition {
     }
 
     @Override
+    public BlockPosition offset(int i, int i1, int i2) {
+        return new SBlockPosition(this.world, this.x + x, this.y + y, this.z + z);
+    }
+
+    @Override
     public Block getBlock() {
         return parse().getBlock();
     }
